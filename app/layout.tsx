@@ -4,6 +4,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 
 import Navbar from '@/components/navbar'
 import { ThemeProvider } from '@/components/theme-provider'
+import { Toaster } from '@/components/ui/toaster'
 
 import './globals.css'
 
@@ -43,6 +44,7 @@ export default function RootLayout({
           >
             <Navbar />
             <main className="container py-8">{children}</main>
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
