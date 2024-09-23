@@ -4,10 +4,10 @@ import { useFormState } from 'react-dom'
 import { useEffect } from 'react'
 import { useToast } from '@/hooks/use-toast'
 
-import { actionFunction } from '@/utils/types'
+import type { ActionFunction } from '@/utils/types'
 
 interface Props {
-  action: actionFunction
+  action: ActionFunction
   children: React.ReactNode
 }
 

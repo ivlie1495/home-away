@@ -2,7 +2,7 @@ import FormContainer from '@/components/form/form-container'
 import FormInput from '@/components/form/form-input'
 import SubmitButton from '@/components/form/submit-button'
 
-const createProfileAction = async (prevState: unknown, formData: FormData) => {
+const createProfileAction = async (_: unknown, formData: FormData) => {
   'use server'
   const firstName = formData.get('firstName') as string
   console.log(firstName)
