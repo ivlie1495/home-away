@@ -1,3 +1,4 @@
+import { createProfileAction } from '@/actions/profile'
 import FormContainer from '@/components/form/form-container'
 import FormInput from '@/components/form/form-input'
 import SubmitButton from '@/components/form/submit-button'
@@ -7,14 +8,6 @@ const inputs = [
   { name: 'lastName', label: 'Last Name' },
   { name: 'username', label: 'Username' },
 ]
-
-const createProfileAction = async (_: unknown, formData: FormData) => {
-  'use server'
-  const firstName = formData.get('firstName') as string
-  console.log(firstName)
-
-  return { message: 'Profile created' }
-}
 
 const ProfileCreate = () => {
   return (
